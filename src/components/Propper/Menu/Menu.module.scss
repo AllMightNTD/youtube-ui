@@ -1,0 +1,68 @@
+// Taskbar Setting
+.action_setting {
+    width: 298px;
+    min-height: 100px;
+    background-color: #ccc;
+    border-radius: 8px;
+
+    .menu-item {
+        margin-left: 0;
+    }
+}
+
+// Header OnBack
+.header {
+    position: relative;
+    height: 50px;
+    margin-top: 8px;
+}
+
+.back-btn {
+    width: 50px;
+    padding-top: 2px;
+    height: 100%;
+    background-color: transparent;
+    cursor: pointer;
+}
+.header-title {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+}
+
+// Users Login Info
+
+.accounts_login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    height: 83px;
+    padding: 16px;
+    margin-bottom: 8px;
+}
+.users_login {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    padding-right: 56px;
+
+    img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+}
+.account_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.user_manage {
+    font-size: 14px;
+    padding-top: 12px;
+    text-decoration: none;
+}

@@ -1,0 +1,20 @@
+.wrapper {
+    width: 240px;
+    padding-top: 10px;
+    padding-right: 20px;
+    min-height: 1000px;
+}
+
+.group-one {
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid #ccc;
+
+    .title {
+        font-size: 14px;
+        font-weight: 500;
+        color: red;
+        margin-left: 22px;
+        margin-bottom: 8px;
+    }
+}

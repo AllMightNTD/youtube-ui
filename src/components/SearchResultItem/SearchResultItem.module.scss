@@ -1,0 +1,19 @@
+.wrapper {
+    display: flex;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 13px;
+    align-items: center;
+    .icon {
+        margin-left: 10px;
+        padding-top: 2px;
+    }
+
+    .result {
+        margin-left: 18px;
+    }
+
+    &:hover {
+        background-color: var(--primary-search);
+    }
+}

@@ -1,0 +1,33 @@
+.menu-item {
+    display: flex;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 8px 0;
+    align-items: center;
+    color: black;
+    padding-left: 22px;
+    transition: background-color ease-in-out 200ms;
+
+    &.active {
+        transition: background-color ease-in-out 200ms;
+        background-color: rgba(22, 24, 35, 0.08);
+    }
+    &.active .title {
+        font-weight: 700;
+    }
+
+    &:hover {
+        background-color: rgba(22, 24, 35, 0.05);
+    }
+}
+.picture {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.title {
+    font-weight: 400;
+    text-overflow: ellipsis;
+    margin-left: 24px;
+}

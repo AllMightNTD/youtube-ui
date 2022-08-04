@@ -1,0 +1,335 @@
+.wrapper {
+    width: 100%;
+    height: var(--primary-height);
+    display: flex;
+    justify-content: center;
+}
+.inner {
+    width: var(--primary-width);
+    max-width: 100%;
+    height: 100%;
+    padding: 0 24px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.IconSideBar_Logo {
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+}
+.Logo {
+    margin-left: 24px;
+}
+.icon-logo {
+    color: #fff;
+}
+// * Search
+// Button
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-text {
+    width: 598px;
+    height: 40px;
+    padding: 0px 4px 0px 16px;
+    border-radius: 40px;
+    background-color: var(--primary-search);
+    align-items: center;
+    display: flex;
+
+    input {
+        flex: 1;
+        height: 100%;
+        font-size: 1.6rem;
+        border: none;
+        max-width: 100%;
+        text-align: inherit;
+        font-weight: 400;
+        line-height: 24px;
+        outline: none;
+        background-color: transparent;
+    }
+    // Khi có chữ trong input => thêm background cho nút search
+    input:not(:placeholder-shown) ~ .search-btn {
+        background-color: #333;
+    }
+
+    &:focus-within {
+        background-color: #fff;
+        box-shadow: 0px 4px 15px #646464;
+    }
+}
+.search-result_login {
+    width: 598px;
+}
+.keyboard {
+    background-color: transparent;
+    padding-top: 2px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+.clear-btn {
+    background-color: transparent;
+    font-weight: 200;
+    width: 22px;
+    height: 22px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.search-btn {
+    background-color: transparent;
+    width: 48px;
+    margin-top: 5px;
+    border-radius: 30px;
+    height: 80%;
+    margin-bottom: 5px;
+    padding-top: 5px;
+    cursor: pointer;
+}
+.search-voice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--primary-search);
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+// Search No-Login
+
+.search_noLogin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search_Login-contains {
+    border: 1px solid #ccc;
+    height: 40px;
+
+    &:focus-within {
+        border: 1px solid #3f51b5;
+        box-shadow: 0px 1px 1px #646464;
+    }
+}
+.search_Login-contains,
+.search-result_nologin {
+    width: 538px;
+}
+.search_text-noLogin {
+    width: 538px;
+    height: 40px;
+    align-items: center;
+    display: flex;
+
+    input {
+        flex: 1;
+        height: 100%;
+        font-size: 1.6rem;
+        border: none;
+        max-width: 100%;
+        text-align: inherit;
+        font-weight: 400;
+        line-height: 24px;
+        padding: 0px 4px 0px 16px;
+        outline: none;
+        background-color: transparent;
+    }
+}
+.nologin-clear_btn {
+    background-color: transparent;
+    font-weight: 200;
+    width: 22px;
+    height: 22px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.search_btn-noLogin {
+    background-color: var(--primary-search);
+    width: 64px;
+    margin-top: 5px;
+    height: 40px;
+    margin-bottom: 5px;
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+// Action Login
+
+.action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.creat-video {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    width: 40px;
+    margin-right: 7px;
+    height: 40px;
+    background-color: transparent;
+}
+.creat_video-icon {
+    width: 22px;
+    height: 22px;
+}
+.notification_video {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 22px;
+    padding: 8px;
+    background-color: transparent;
+}
+.notification_video-icon {
+    width: 22px;
+    height: 22px;
+}
+.user_account {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    border-radius: 50%;
+    text-overflow: hidden;
+
+    img {
+        object-fit: cover;
+        border-radius: 50%;
+        text-overflow: hidden;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+// Actions no login
+.action_noLogin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon_user_noLogin {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin-right: 11px;
+}
+.user-account_noLogin {
+    cursor: pointer;
+    display: flex;
+    margin-left: 5px;
+    align-items: center;
+    padding: 5px 11px;
+    font-weight: 600;
+    border-radius: 2px;
+    border: 1px solid #065fd4;
+
+    .icon_user {
+        color: #065fd4;
+        font-size: 18px;
+    }
+    text-decoration: none;
+}
+
+.user_account-text_noLogin {
+    font-size: 13px;
+    color: #065fd4;
+    font-weight: 500;
+}
+
+// Setting
+.setting_search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.setting_icon {
+    font-size: 18px;
+    font-weight: 200;
+}
+
+// Tippy User
+.wrapper_user {
+    width: 298px;
+    min-height: 100px;
+    background-color: #ccc;
+    border-radius: 8px;
+}
+
+// Creat Video
+.creat_box {
+    width: 180px;
+    height: 96px;
+    padding: 8px 0;
+    border-radius: 8px;
+    box-shadow: 0px 4px 15px #646464;
+}
+.btn_dow {
+    width: 100%;
+}
+.btn_live {
+    width: 100%;
+}
+
+.Notification_box {
+    width: 480px;
+    height: 623px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 15px #646464;
+}
+.notification_action {
+    height: 49px;
+    border-bottom: 1px solid #333;
+    display: flex;
+    padding: 0 20px;
+    align-items: center;
+    justify-content: space-between;
+
+    .notification_action {
+        background-color: transparent;
+    }
+    .btn_setNoti:hover {
+        background-color: transparent;
+    }
+}
+.notification_display {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 160px 100px;
+    align-items: center;
+
+    .icon {
+        color: #ccc;
+    }
+    h3 {
+        margin-top: 21px;
+        color: #606060;
+        font-size: 16px;
+    }
+    span {
+        color: #979797;
+        margin-top: 9px;
+        font-size: 14px;
+    }
+}
