@@ -296,18 +296,18 @@
     height: 623px;
     border-radius: 8px;
     box-shadow: 0px 4px 15px #646464;
+    overflow: hidden;
+    background-color: #fff;
 }
 .notification_action {
     height: 49px;
     border-bottom: 1px solid #333;
     display: flex;
     padding: 0 20px;
+    background-color: #fff;
     align-items: center;
     justify-content: space-between;
 
-    .notification_action {
-        background-color: transparent;
-    }
     .btn_setNoti:hover {
         background-color: transparent;
     }
