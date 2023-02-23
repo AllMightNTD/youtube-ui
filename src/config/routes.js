@@ -11,5 +11,12 @@ const routes = {
     sports: '/sports',
     game: '/game',
     setting: '/setting',
+    youtubemusic: '/music',
+    youtubekids: '/kids',
+    youtubeTv: '/tv',
+    creatorStudio: '/creator-studio',
+    history: '/history',
+    help: '/help',
+    feedback: '/feedback',
 };
 export default routes;

@@ -73,16 +73,16 @@ function Sidebar() {
                 </div>
                 <div className={cx('group-one')}>
                     <h3 className={cx('title')}>DỊCH VỤ KHÁC CỦA YOUTUBE </h3>
-                    <MenuItem title="Creator Studio" to={config.routes.sports} icon={<CreatorStudioIcon />} />
-                    <MenuItem title="Youtube Music" to={config.routes.game} icon={<YoutubeMusicICon />} />
-                    <MenuItem title="Youtube Kids" to={config.routes.game} icon={<YoutubeKidIcon />} />
-                    <MenuItem title="Youtube TV" to={config.routes.game} icon={<YoutubeTvIcon />} />
+                    <MenuItem title="Creator Studio" to={config.routes.creatorStudio} icon={<CreatorStudioIcon />} />
+                    <MenuItem title="Youtube Music" to={config.routes.youtubemusic} icon={<YoutubeMusicICon />} />
+                    <MenuItem title="Youtube Kids" to={config.routes.youtubekids} icon={<YoutubeKidIcon />} />
+                    <MenuItem title="Youtube TV" to={config.routes.youtubeTv} icon={<YoutubeTvIcon />} />
                 </div>
                 <div className={cx('group-one')}>
-                    <MenuItem title="Cài đặt" to={config.routes.sports} icon={<SettingIcon />} />
-                    <MenuItem title="Lịch sử báo cáo" to={config.routes.game} icon={<HistoryReportIcon />} />
-                    <MenuItem title="Trợ giúp" to={config.routes.game} icon={<HelpIcon />} />
-                    <MenuItem title="Phản hồi" to={config.routes.game} icon={<FeedBackIcon />} />
+                    <MenuItem title="Cài đặt" to={config.routes.setting} icon={<SettingIcon />} />
+                    <MenuItem title="Lịch sử báo cáo" to={config.routes.history} icon={<HistoryReportIcon />} />
+                    <MenuItem title="Trợ giúp" to={config.routes.help} icon={<HelpIcon />} />
+                    <MenuItem title="Phản hồi" to={config.routes.feedback} icon={<FeedBackIcon />} />
                 </div>
                 <div className={cx('group-one')}>
                     <div className={cx('group_footer')}>
